@@ -4,7 +4,7 @@ $(function () {
 	var url = 'https://restcountries.eu/rest/v1/name/';
 	var countriesList = $('#countries');
 
-	$('#search').click(searchCountries);
+	$('#search').on("click", searchCountries);
 
 	function searchCountries() {
 	    var countryName = $('#country-name').val();
